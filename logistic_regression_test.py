@@ -3,7 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn import datasets
 import matplotlib.pyplot as plt
 
-from logistic_regression import LogisticRegression
+#from logistic_regression import LogisticRegression
+from regression import LogisticRegression
 from tests.linear_regression_tests import X_train
 
 bc = datasets.load_breast_cancer() # import data set

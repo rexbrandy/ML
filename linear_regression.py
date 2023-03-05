@@ -8,8 +8,8 @@ class LinearRegression:
         self.bias = None
 
     def fit(self, X, y):
-        # init parameters
         n_samples, n_features = X.shape
+        
         self.weights = np.zeros(n_features)
         self.bias = 0
 
