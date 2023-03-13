@@ -3,12 +3,21 @@ from sklearn import linear_model
 
 class BaseRegression:
     def __init__(self, lr=0.01, n_iters=1000):
-        self.lr = lr
-        self.n_iters = n_iters
+        self.lr = lr # Learning Rate
+        self.n_iters = n_iters # no. of iterations
         self.weights = None
         self.bias = 0
 
     def fit(self, X, y):
+        '''
+            Train alogrithm
+                get sample size and feature size
+                init weights and bias
+                for n_iters:
+                    predicted y
+                    calculate derivatives
+                    update weights and bias
+        '''
         n_samples, n_features = X.shape
         
         self.weights = np.zeros(n_features)
